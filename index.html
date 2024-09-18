@@ -380,6 +380,86 @@
         #backToTop:hover {
             background-color: var(--secondary-color);
         }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            header {
+                padding: 2rem 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .skill-bar {
+                width: 120px;
+                height: 120px;
+            }
+
+            .repos {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-link {
+                margin-bottom: 1rem;
+            }
+
+            .theme-switch-wrapper,
+            .lang-switch-wrapper {
+                position: static;
+                margin: 1rem auto;
+                text-align: center;
+            }
+
+            #backToTop {
+                bottom: 10px;
+                right: 10px;
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+
+        /* Additional adjustments for very small screens */
+        @media screen and (max-width: 480px) {
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-bar {
+                width: 100px;
+                height: 100px;
+            }
+
+            .skill-percent {
+                font-size: 1.2rem;
+            }
+        }
     </style>
 </head>
 <body>
